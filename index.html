@@ -8,7 +8,38 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
+  <div class="container-general">
+    <section class="container-general__data-entry">
+      <header class="container-general__header">
+        <span class="iconify container-general__header__icon" data-icon="healthicons:magnifying-glass"></span>
+        <h1 class="container-general__header__title-app">Decoder</h1>
+      </header>
+      <textarea name="text" cols="30" rows="10" class="container-general__input-area">Digite seu texto</textarea>
+      <section class="container-general__information-area">
+        <span class="iconify container-general__information-area__icon" data-icon="ion:information-circle"></span>
+        <p class="container-general__information-area__text">Apenas letras minúsculas e sem acentos</p>
+      </section>
+      <section class="container-general__service-buttons">
+        <button class="container-general__service-buttons__encrypts">
+          Criptografar
+        </button>
+        <button class="container-general__service-buttons__decrypts">
+          Descriptografar
+        </button>
+      </section>
+    </section>
+    <section class="container-general__data-output">
+      <div class="container-general__output-area">
+        <h2 class="container-general__output-area__title-empty-area">
+          Nenhuma mensagem encontrada
+        </h2>
+        <p class="container-general__output-area__area-receiving-output">
+          Digite um texto que você queira criptografar ou descriptografar.
+        </p>
+      </div>
+    </section>
+  </div>
 <script src="./assets/js/script.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>
