@@ -14,13 +14,13 @@
         <span class="iconify container-general__header__icon" data-icon="healthicons:magnifying-glass"></span>
         <h1 class="container-general__header__title-app">Decoder</h1>
       </header>
-      <textarea name="text" cols="30" rows="10" class="container-general__input-area">Digite seu texto</textarea>
+      <textarea name="text" cols="30" rows="10" class="container-general__input-area" id="input-area">Digite seu texto</textarea>
       <section class="container-general__information-area">
         <span class="iconify container-general__information-area__icon" data-icon="ion:information-circle"></span>
         <p class="container-general__information-area__text">Apenas letras minúsculas e sem acentos</p>
       </section>
       <section class="container-general__service-buttons">
-        <button class="container-general__service-buttons__encrypts">
+        <button class="container-general__service-buttons__encrypts" id="button-encrypt">
           Criptografar
         </button>
         <button class="container-general__service-buttons__decrypts">
@@ -29,14 +29,14 @@
       </section>
     </section>
     <section class="container-general__data-output">
-      <div class="container-general__output-area">
-        <div class="container-general__center-area">
+      <div class="container-general__output-area" id="output-area">
+        <div class="container-general__center-area" id="hide-area">
           <img class="container-general__output-area__image-search" src="./assets/img/image-search.svg" alt="pessoa sentada com uma lupa olhando para um diamante">
         </div>
-        <h2 class="container-general__output-area__title-empty-area">
+        <h2 class="container-general__output-area__title-empty-area" id="hide-area2">
           Nenhuma mensagem encontrada
         </h2>
-        <p class="container-general__output-area__area-receiving-output">
+        <p class="container-general__output-area__area-receiving-output" id="output-area-text">
           Digite um texto que você queira criptografar ou descriptografar.
         </p>
       </div>
