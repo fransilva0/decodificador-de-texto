@@ -13,11 +13,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.container-general {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .container-general__data-entry{
   text-align: center;
 }
@@ -47,6 +42,7 @@ body {
   font-size: 2rem;
   background: none;
   font-weight: 200px;
+  border: none;
 }
 
 .container-general__information-area {
@@ -107,3 +103,99 @@ body {
   font-weight: 400px;
 }
 
+.container-general__center-area {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.footer__container-dev {
+  display: flex;
+  align-items: center;
+}
+
+.footer__container-dev__icon {
+  margin-right: 0.5rem;
+}
+
+.footer__container-dev__link {
+  color: #0A3871;
+}
+
+/*Responsividade para tablets*/
+@media (min-width: 482px) and (max-width: 767px) {
+
+  .container-general__data-entry {
+    text-align: left;
+  }
+
+  .container-general__input-area {
+    width: 440px;
+    height: 400px;
+    margin-left: 1rem;
+  }
+}
+
+/*Responsividade para telas pequenas, laptops*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-general__data-entry {
+    text-align: left;
+  }
+
+  .container-general__input-area {
+    width: 700px;
+    height: 400px;
+    margin-left: 1rem;
+  }
+}
+
+/*Responsividade para telas grandes */
+@media (min-width: 1025px) {
+
+  .container-general__center-area {
+    display: inline;
+    text-align: center;
+  }
+
+  .container-general__output-area__image-search {
+    width: 14rem;
+  }
+
+  .container-general__output-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-general__data-entry {
+    text-align: left;
+  }
+
+  .container-general__input-area {
+    width: 700px;
+    height: 400px;
+    margin-left: 4rem;
+  }
+
+  .container-general {
+    display: flex;
+  }
+
+  .container-general__information-area {
+    margin-left: 4rem;
+  }
+
+  .container-general__service-buttons__encrypts,
+  .container-general__service-buttons__decrypts {
+    margin: 1rem;
+    height: 3rem;
+    width: 16rem;
+    border-radius: 1rem;
+    font-weight: 100px;
+  }
+}
