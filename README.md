@@ -1,9 +1,7 @@
 <div align='center' id='top'>
-<img src='./.github/app.gif' alt='app_name' />
+<img src='./.github/projeto_decoder.gif' alt='app_name' />
 
 &#xa0;
-
-<!-- <a href='linkdosite'>Demo</a> -->
 
 </div>
 
@@ -25,10 +23,6 @@
 
 <!-- <img alt='Github stars' src='https://img.shields.io/github/stars/{{github}}/{{repository}}?color=56BEB8' /> -->
 </p>
-
-<!-- Status -->
-
-<h4 align='center'>🚧  Decoder 🚀 Em construção...  🚧 </h4>
 
 <p align='center'>
 <a href='#dart-sobre'>Sobre</a> &#xa0; | &#xa0;
@@ -62,12 +56,14 @@
 <p>
   Em relação as animações, adicionei uma animação onde o ícone e o título do Header percorre uma linha da ponta direita para a esquerda ao iniciar a página. Já nos botões de Encriptar e Desencriptar adicionei uma animação que ao colocar o mouse por cima do mesmo, uma faixa de cor mais escura percorre o botão da esquerda para a direita preenchendo o mesmo com a nova cor. Ambas as animações foram simplistas, apenas para treinamento inicial desse conteúdo.
 </p>
+<p>
+  Além do desafio principal, ocorreu a sugestão de uma implementação extra no projeto, o botão de copiar o resultado para a área de transeferência, porém não consegui resolve-lo usando o que foi proposto, decidindo, no momento, entregar o desafio apenas com as implementações obrigatórias deixando novas implementações e funcionalidades para algum momento futuro, após a conclusão do programa ONE.
+</p>
 
 ## :sparkles: Funcionalidades ##
 
 :heavy_check_mark: Criptografar texto;<br />
 :heavy_check_mark: Desciptografar texto;<br />
-:heavy_check_mark: Funcionalidade 3;
 
 ## :memo: Licença ##
 
