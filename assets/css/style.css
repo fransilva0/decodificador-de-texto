@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
-.container-general__header {
+.c-header {
   text-align: left;
   display: flex;
   align-items: center;
@@ -25,13 +25,13 @@ body {
   animation-name: slip;
 }
 
-.container-general__header__icon {
+.c-header__icon {
   margin-left: 1rem;
   font-size: 4rem;
   color:#4C9971;
 }
 
-.container-general__header__title-app {
+.c-header__title-app {
   color:#4C9971;
   font-size: 2rem;
 }
