@@ -1,50 +1,50 @@
-const BUTTON_ENCRYPT = document.getElementById('button-encrypt')
-const BUTTON_DECRYPT = document.getElementById('button-decrypt')
+const buttonEncrypt = document.getElementById('button-encrypt')
+const buttonDecrypt = document.getElementById('button-decrypt')
 
-BUTTON_ENCRYPT.onclick = () => {
-  const TEXT_ENTRY = document.getElementById('input-area').value
-  const OUTPUT_AREA = document.getElementById('output-area')
-  const OUTPUT_AREA_TEXT = document.getElementById('output-area-text')
-  const HIDE_AREA = document.getElementById('hide-area')
-  const HIDE_AREA2 = document.getElementById('hide-area2')
-  const ARRAY_LIST_TEXT = TEXT_ENTRY.split('')
-  const ARRAY_LIST_ENCRYPT = []
+buttonEncrypt.onclick = () => {
+  const textEntry = document.getElementById('input-area').value
+  const outputArea = document.getElementById('output-area')
+  const outputAreaText = document.getElementById('output-area-text')
+  const hideArea = document.getElementById('hide-area')
+  const hideArea2 = document.getElementById('hide-area2')
+  const arrayListText = textEntry.split('')
+  const arrayListEncrypt = []
 
-  for (let i = 0; i < ARRAY_LIST_TEXT.length; i++) {
-    if (ARRAY_LIST_TEXT[i] === 'a') {
-      ARRAY_LIST_ENCRYPT.push('ai')
-    } else if (ARRAY_LIST_TEXT[i] === 'e') {
-      ARRAY_LIST_ENCRYPT.push('enter')
-    } else if (ARRAY_LIST_TEXT[i] === 'i') {
-      ARRAY_LIST_ENCRYPT.push('imes')
-    } else if (ARRAY_LIST_TEXT[i] === 'o') {
-      ARRAY_LIST_ENCRYPT.push('ober')
-    } else if (ARRAY_LIST_TEXT[i] === 'u') {
-      ARRAY_LIST_ENCRYPT.push('ufat')
+  for (let i = 0; i < arrayListText.length; i++) {
+    if (arrayListText[i] === 'a') {
+      arrayListEncrypt.push('ai')
+    } else if (arrayListText[i] === 'e') {
+      arrayListEncrypt.push('enter')
+    } else if (arrayListText[i] === 'i') {
+      arrayListEncrypt.push('imes')
+    } else if (arrayListText[i] === 'o') {
+      arrayListEncrypt.push('ober')
+    } else if (arrayListText[i] === 'u') {
+      arrayListEncrypt.push('ufat')
     } else {
-      ARRAY_LIST_ENCRYPT.push(ARRAY_LIST_TEXT[i])
+      arrayListEncrypt.push(arrayListText[i])
     }
   }
 
-  HIDE_AREA.style.display = 'none'
-  HIDE_AREA2.style.display = 'none'
-  OUTPUT_AREA.style.justifyContent = 'start'
+  hideArea.style.display = 'none'
+  hideArea2.style.display = 'none'
+  outputArea.style.justifyContent = 'start'
 
-  OUTPUT_AREA_TEXT.innerHTML = ARRAY_LIST_ENCRYPT.join('')
+  outputAreaText.innerHTML = arrayListEncrypt.join('')
 }
 
-BUTTON_DECRYPT.onclick = () => {
-  const TEXT_ENTRY = document.getElementById('input-area').value
-  const OUTPUT_AREA = document.getElementById('output-area')
-  const OUTPUT_AREA_TEXT = document.getElementById('output-area-text')
-  const HIDE_AREA = document.getElementById('hide-area')
-  const HIDE_AREA2 = document.getElementById('hide-area2')
+buttonDecrypt.onclick = () => {
+  const textEntry = document.getElementById('input-area').value
+  const outputArea = document.getElementById('output-area')
+  const outputAreaText = document.getElementById('output-area-text')
+  const hideArea = document.getElementById('hide-area')
+  const hideArea2 = document.getElementById('hide-area2')
 
-  const DECRYPT = TEXT_ENTRY.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u')
+  const decrypt = textEntry.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u')
 
-  HIDE_AREA.style.display = 'none'
-  HIDE_AREA2.style.display = 'none'
-  OUTPUT_AREA.style.justifyContent = 'start'
+  hideArea.style.display = 'none'
+  hideArea2.style.display = 'none'
+  outputArea.style.justifyContent = 'start'
 
-  OUTPUT_AREA_TEXT.innerHTML = DECRYPT
+  outputAreaText.innerHTML = decrypt
 }
